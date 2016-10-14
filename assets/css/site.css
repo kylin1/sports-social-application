@@ -1,0 +1,89 @@
+html { margin: 0; padding: 0; }
+body { font-size: 100%; margin: 0; padding: 1.75em; font-family: 'Helvetica Neue', Arial, sans-serif; }
+
+h1 { font-size: 1.75em; margin: 0 0 0.6em 0; }
+h2 { font-size: 1.25em; margin: 0 0 0.6em 0; }
+
+a { color: #2996cc; }
+a:hover { text-decoration: none; }
+
+p { line-height: 1.5em; }
+.small { color: #666; font-size: 0.875em; }
+.large { font-size: 1.25em; }
+
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    margin: 0.5em 0 3em 0;
+    padding: 0.5em;
+}
+
+button#datepicker-button {
+    margin-bottom: 3em;
+}
+
+.flow-element {
+    display: inline-block;
+    margin-right: 3em;
+    vertical-align: top;
+}
+.flow-element:last-child {
+    margin-right: 0;
+}
+.flow-element input {
+    margin-top: 0;
+}
+
+#container {
+    min-height: 15em;
+}
+
+
+#carbonads {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 2em;
+    padding: 1em;
+    max-width: 360px;
+    border: solid 1px #e5e5e5;
+    border-radius: 3px;
+    background-color: #fafafa;
+    box-shadow: inset 0 1px #fff;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#carbonads a {
+    text-decoration: none;
+}
+
+#carbonads span {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.carbon-img {
+    float: left;
+    margin-right: 1em;
+}
+
+.carbon-img img { display: block; }
+
+.carbon-text {
+    display: block;
+    float: left;
+    max-width: calc(100% - 130px - 1em);
+    text-align: left;
+}
+
+.carbon-poweredby {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    font-size: 12px;
+}
