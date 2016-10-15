@@ -24,12 +24,17 @@
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+
+	<!-- 日期选择 -->
+	<link rel="stylesheet" href="assets/css/pikaday.css">
+	<link rel="stylesheet" href="assets/css/site.css">
+
 </head>
 
 <body>
 
 	<div class="wrapper">
-				<!--整个左侧导航栏-->
+		<!--整个左侧导航栏-->
 	    <div class="sidebar" data-color="purple" data-image="../assets/img/sidebar-1.jpg">
 
 	    	<!--导航左上角的图标-->
@@ -102,7 +107,7 @@
 							</li>
 							<li>
 								<a href="">
-									设置
+									更多设置
 								</a>
 							</li>
 						</ul>
@@ -151,101 +156,130 @@
 			<!--2.内容-->
 			<div class="content">
 				<div class="container-fluid">
-					<div class="row">
-						<div class="col-md-8">
-							<div class="card">
-								<div class="card-header" data-background-color="purple">
-									<h4 class="title">Edit Profile</h4>
-									<p class="category">Complete your profile</p>
-								</div>
-								<div class="card-content">
-									<form>
-										<div class="row">
-											<div class="col-md-5">
-												<div class="form-group label-floating">
-													<label class="control-label">Company (disabled)</label>
-													<input type="text" class="form-control" disabled>
-												</div>
-											</div>
-											<div class="col-md-3">
-												<div class="form-group label-floating">
-													<label class="control-label">Username</label>
-													<input type="text" class="form-control" >
-												</div>
-											</div>
-											<div class="col-md-4">
-												<div class="form-group label-floating">
-													<label class="control-label">Email address</label>
-													<input type="email" class="form-control" >
-												</div>
-											</div>
-										</div>
 
-										<div class="row">
-											<div class="col-md-6">
-												<div class="form-group label-floating">
-													<label class="control-label">Fist Name</label>
-													<input type="text" class="form-control" >
-												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="form-group label-floating">
-													<label class="control-label">Last Name</label>
-													<input type="text" class="form-control" >
-												</div>
-											</div>
-										</div>
+                    <!--第一部分:个人信息的修改-->
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-header" data-background-color="purple">
+                                    <h4 class="title">个人资料</h4>
+                                    <p class="category"></p>
+                                </div>
+                                <div class="card-content">
+                                    <form>
+                                        <!--名称行-->
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">姓名</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group label-floating">
+                                                    <label class="control-label">昵称</label>
+                                                    <input type="text" class="form-control" >
+                                                </div>
+                                            </div>
+                                        </div>
 
-										<div class="row">
-											<div class="col-md-12">
-												<div class="form-group label-floating">
-													<label class="control-label">Adress</label>
-													<input type="text" class="form-control" >
-												</div>
-											</div>
-										</div>
+                                        <!--性别行-->
+                                        <div class="row">
+                                            <label class="col-sm-1 control-label">性别</label>
 
-										<div class="row">
-											<div class="col-md-4">
-												<div class="form-group label-floating">
-													<label class="control-label">City</label>
-													<input type="text" class="form-control" >
-												</div>
-											</div>
-											<div class="col-md-4">
-												<div class="form-group label-floating">
-													<label class="control-label">Country</label>
-													<input type="text" class="form-control" >
-												</div>
-											</div>
-											<div class="col-md-4">
-												<div class="form-group label-floating">
-													<label class="control-label">Postal Code</label>
-													<input type="text" class="form-control" >
-												</div>
-											</div>
-										</div>
+                                            <div class="col-sm-1">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios">
+                                                        男
+                                                    </label>
+                                                </div>
+                                            </div>
 
-										<div class="row">
-											<div class="col-md-12">
-												<div class="form-group">
-													<label>About Me</label>
-													<div class="form-group label-floating">
-														<label class="control-label"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
-														<textarea class="form-control" rows="5"></textarea>
-													</div>
-												</div>
-											</div>
-										</div>
+                                            <div class="col-sm-1">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios">
+                                                        女
+                                                    </label>
+                                                </div>
+                                            </div>
 
-										<button type="submit" class="btn btn-primary pull-right">Update Profile</button>
-										<div class="clearfix"></div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+                                            <div class="col-sm-1">
+                                            </div>
+
+                                            <div class="col-sm-1">
+                                                <div style="display: inline-block">
+                                                    <label class="control-label" for="start">生日</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-2">
+                                                <div style="display: inline-block">
+                                                    <input type="text" id="start">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <label class="col-sm-2 control-label">兴趣</label>
+                                            <div class="col-sm-2">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" name="optionsCheckboxes">
+                                                        跑步
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" name="optionsCheckboxes">
+                                                        游泳
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" name="optionsCheckboxes">
+                                                        骑行
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox" name="optionsCheckboxes">
+                                                        登山
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <div class="form-group label-floating">
+                                                        <label class="control-label">个人简介</label>
+                                                        <textarea class="form-control" rows="5"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary pull-right">
+                                            保存</button>
+                                        <div class="clearfix"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
 			</div>
 
 	        <!--3.页脚-->
@@ -292,5 +326,20 @@
 	<!-- Material Dashboard DEMO methods, don't include it in your project! -->
 	<script src="assets/js/demo.js"></script>
 
+
+
+	<script src="assets/js/pikaday.js"></script>
+	<script>
+
+		var picker = new Pikaday(
+				{
+					field: document.getElementById('start'),
+					firstDay: 1,
+					minDate: new Date(2000, 0, 1),
+					maxDate: new Date(2020, 12, 31),
+					yearRange: [2000,2020]
+				});
+
+	</script>
 
 </html>
