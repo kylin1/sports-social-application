@@ -33,54 +33,57 @@
 
 	<div class="wrapper">
 
-		<!--左侧导航栏-->
-	    <div class="sidebar" data-color="purple" data-image="../assets/img/sidebar-1.jpg">
+        <!--左侧导航栏-->
+        <div class="sidebar" data-color="purple" data-image="../assets/img/sidebar-1.jpg">
 
-	    	<!--导航左上角的图标-->
-			<div class="logo">
-				<a href="index.html" class="simple-text">
-					Hi, Kylin
-				</a>
-			</div>
+            <!--导航左上角的图标-->
+            <div class="logo">
+                <a href="index.html" class="simple-text">
+                    人是会运动的苇草
+                </a>
+            </div>
 
-			<!--导航栏整体-->
-	    	<div class="sidebar-wrapper">
-	            <ul class="nav">
+            <!--导航栏整体-->
+            <div class="sidebar-wrapper">
+                <ul class="nav">
 
-	            	<!--这是一个导航的图标-->
-	                <li>
-	                    <a href="sport.html">
-	                    	<!-- 导航图标的样式-->
-	                        <i class="material-icons">dashboard</i>
-	                        <!--显示的文字-->
-	                        <p>运动</p>
-	                    </a>
-	                </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="material-icons">library_books</i>
+                            <p>首页</p>
+                        </a>
+                    </li>
 
-	                <!--下面是其他的item代表更多的导航-->
-	                <li class="active">
-	                    <a href="compete.html">
-	                        <i class="material-icons">person</i>
-	                        <p>竞赛</p>
-	                    </a>
-	                </li>
-	                <li>
-	                    <a href="social.html">
-	                        <i class="material-icons">content_paste</i>
-	                        <p>圈子</p>
-	                    </a>
-	                </li>
-	                <li>
-	                    <a href="user.html">
-	                        <i class="material-icons">library_books</i>
-	                        <p>账号</p>
-	                    </a>
-	                </li>
-	            </ul>
-	    	</div>
-		</div>
+                    <!--这是一个导航的图标-->
+                    <li>
+                        <a href="sport.html">
+                            <!-- 导航图标的样式-->
+                            <i class="material-icons">dashboard</i>
+                            <!--显示的文字-->
+                            <p>运动</p>
+                        </a>
+                    </li>
 
-		<!--主体界面-->
+                    <!--下面是其他的item代表更多的导航-->
+                    <li class="active">
+                        <a href="compete.html">
+                            <i class="material-icons">person</i>
+                            <p>竞赛</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="social.html">
+                            <i class="material-icons">content_paste</i>
+                            <p>圈子</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <!--主体界面-->
 	    <div class="main-panel">
 	    	<!--1.导航栏-->
 			<nav class="navbar navbar-primary navbar-absolute">
@@ -116,44 +119,39 @@
 							</li>
 						</ul>
 
-						<ul class="nav navbar-nav navbar-right">
-							<li>
-								<a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
-									<i class="material-icons">dashboard</i>
-									<p class="hidden-lg hidden-md">Dashboard</p>
-								</a>
-							</li>
-							<li class="dropdown">
-								  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-										<i class="material-icons">notifications</i>
-										<span class="notification">5</span>
-										<p class="hidden-lg hidden-md">Notifications</p>
-								  </a>
-								  <ul class="dropdown-menu">
-									<li><a href="#">Mike John responded to your email</a></li>
-									<li><a href="#">You have 5 new tasks</a></li>
-									<li><a href="#">You're now friend with Andrew</a></li>
-									<li><a href="#">Another Notification</a></li>
-									<li><a href="#">Another One</a></li>
-								  </ul>
-							</li>
-							<li>
-								<a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
-	 							   <i class="material-icons">person</i>
-	 							   <p class="hidden-lg hidden-md">Profile</p>
-	 						   </a>
-							</li>
-						</ul>
+                        <!--右侧三个小按钮-->
+                        <div class="collapse navbar-collapse" id="example-navbar-primary">
+                            <ul class="nav navbar-nav navbar-right">
 
-						<form class="navbar-form navbar-right" role="search">
-							<div class="form-group  is-empty">
-	                        	<input type="text" class="form-control" placeholder="Search">
-	                        	<span class="material-input"></span>
-							</div>
-							<button type="submit" class="btn btn-white btn-round btn-just-icon">
-								<i class="material-icons">search</i><div class="ripple-container"></div>
-							</button>
-	                    </form>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="material-icons">notifications</i>
+                                        <span class="notification">3</span>
+                                        <p class="hidden-lg hidden-md">Notifications</p>
+                                        消息
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">一只麟请求加您为好友</a></li>
+                                        <li><a href="#">您的今日目标还未达到,要加油啦~</a></li>
+                                        <li><a href="#">竞赛:"7日100公里"即将结束,请抓紧时间上传数据</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="user.html">
+                                        <i class="material-icons">account_circle</i>
+                                        账户
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#setting">
+                                        <i class="material-icons">settings</i>
+                                        设置
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 					</div>
 				</div>
 			</nav>
@@ -302,6 +300,7 @@
 								</div>
 							</div>
 						</div>
+
 					</div>
 
                     <h2>我参与的</h2>
