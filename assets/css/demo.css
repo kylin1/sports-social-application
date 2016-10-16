@@ -58,20 +58,20 @@
 }
 
 .init-hide{
-    display:none;
+    /*// TODO 一下代码加入时候图表无法再次显示*/
 }
 
-body { font-size: 100%; margin: 0; font-family: 'Helvetica Neue', Arial, sans-serif; }
+/*body { font-size: 100%; margin: 0; font-family: 'Helvetica Neue', Arial, sans-serif; }*/
 
-label {
-    font-weight: bold;
-}
+/*label {*/
+    /*font-weight: bold;*/
+/*}*/
 
-input[type="text"] {
-    margin: 0.5em 0 3em 0;
-    padding: 0.5em;
-}
+/*input[type="text"] {*/
+    /*margin: 0.5em 0 3em 0;*/
+    /*padding: 0.5em;*/
+/*}*/
 
-button#datepicker-button {
-    margin-bottom: 3em;
-}
+/*button#datepicker-button {*/
+    /*margin-bottom: 3em;*/
+/*}*/
