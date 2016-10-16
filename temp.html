@@ -24,6 +24,7 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
 
+
 </head>
 
 <body>
@@ -78,7 +79,6 @@
             </ul>
         </div>
     </div>
-
 
     <!--主体界面-->
     <div class="main-panel">
@@ -152,10 +152,8 @@
                 </div>
             </div>
         </nav>
-
         <!--2.内容-->
         <div class="content">
-            <!--我的竞赛列表-->
             <div class="container-fluid container-sharing">
 
                 <section id="section-whats-new" class="init-hide">
@@ -219,30 +217,30 @@
                     </div>
                 </section>
 
-
             </div>
         </div>
-
-        <!--3.页脚-->
-        <footer class="footer">
-            <div class="container-fluid">
-                <nav class="pull-left">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Home
-                            </a>
-                        </li>
-
-                    </ul>
-                </nav>
-                <p class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script>
-                    <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
-                </p>
-            </div>
-        </footer>
     </div>
+
+    <!--3.页脚-->
+    <footer class="footer">
+        <div class="container-fluid">
+            <nav class="pull-left">
+                <ul>
+                    <li>
+                        <a href="#">
+                            Home
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+            <p class="copyright pull-right">
+                &copy; <script>document.write(new Date().getFullYear())</script>
+                <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+            </p>
+        </div>
+    </footer>
+</div>
 </div>
 
 </body>
@@ -267,51 +265,6 @@
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="assets/js/demo.js"></script>
 
-
-<!--选择起止日期-->
-<script src="assets/js/pikaday.js"></script>
-<script>
-    var startDate, endDate,
-            updateStartDate = function(start) {
-                startPicker.setStartRange(start);
-                endPicker.setStartRange(start);
-                endPicker.setMinDate(start);
-            },
-            updateEndDate = function(end) {
-                startPicker.setEndRange(end);
-                startPicker.setMaxDate(end);
-                endPicker.setEndRange(end);
-            },
-            startPicker = new Pikaday({
-                field: document.getElementById('start'),
-                minDate: new Date(),
-                maxDate: new Date(2022, 12, 31),
-                onSelect: function() {
-                    startDate = this.getDate();
-                    updateStartDate(minDate);
-                }
-            }),
-            endPicker = new Pikaday({
-                field: document.getElementById('end'),
-                minDate: new Date(),
-                maxDate: new Date(2020, 12, 31),
-                onSelect: function() {
-                    endDate = this.getDate();
-                    updateEndDate(minDate, maxDate);
-                }
-            }),
-            _startDate = startPicker.getDate(),
-            _endDate = endPicker.getDate();
-    if (_startDate) {
-        startDate = _startDate;
-        updateStartDate();
-    }
-    if (_endDate) {
-        endDate = _endDate;
-        updateEndDate();
-    }
-</script>
-
 <!--导航栏控制-->
 <script>
     $(document).ready(function () {
@@ -328,5 +281,4 @@
         });
     });
 </script>
-
 </html>
