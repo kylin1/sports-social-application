@@ -159,7 +159,6 @@
         <section class="content">
             <div class="container-fluid container-sharing">
 
-                <!--style要加;结束-->
                 <section id="section-sport">
 
                     <div class="row">
@@ -484,6 +483,8 @@
 <!--使用JS绘制图表-->
 <script>
     $(document).ready(function () {
+        $('#section-sleep').hide();
+        $('#section-health').hide();
         // Javascript method's body can be found in assets/js/demos.js
         demo.initDashboardPageCharts();
         sport.initSportsCharts();
@@ -500,6 +501,7 @@
 
             // 显示对应部分的内容
             $('div.container-sharing > section').hide();
+            sport.initSportsCharts();
             var target = '#' + this.getAttribute('my-target');
             $(target).show();
         });

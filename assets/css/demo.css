@@ -59,7 +59,9 @@
 
 .init-hide{
     /*// TODO 一下代码加入时候图表无法再次显示*/
+    /*display: none;*/
 }
+
 
 /*body { font-size: 100%; margin: 0; font-family: 'Helvetica Neue', Arial, sans-serif; }*/
 

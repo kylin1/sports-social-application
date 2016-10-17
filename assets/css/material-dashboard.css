@@ -682,8 +682,8 @@ h2.title {
 }
 
 .main-panel {
-  max-height: 100%;
-  height: 100%;
+  /*max-height: 100%;*/
+  /*height: 100%;*/
 }
 
 .sidebar,
@@ -3548,6 +3548,10 @@ footer .btn {
   color: rgba(0,0,0, 0.87);
   background: #fff;
 }
+
+.card-close{
+  margin: 5px;
+}
 .card .card-height-indicator {
   margin-top: 100%;
 }
@@ -3668,6 +3672,9 @@ footer .btn {
 .card img {
   width: 100%;
   height: auto;
+}
+.card .img-small{
+    width: 70%;
 }
 .card .category .material-icons {
   position: relative;
