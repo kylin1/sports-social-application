@@ -32,70 +32,6 @@ demo = {
          });
     },
 
-    initDocumentationCharts: function(){
-        /* ----------==========     Daily Sales Chart initialization For Documentation    ==========---------- */
-
-        dataDailySalesChart = {
-            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
-            series: [
-                [12, 17, 7, 17, 23, 18, 38]
-            ]
-        };
-
-        optionsDailySalesChart = {
-            lineSmooth: Chartist.Interpolation.cardinal({
-                tension: 0
-            }),
-            low: 0,
-            high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
-            chartPadding: { top: 0, right: 0, bottom: 0, left: 0},
-        }
-
-        var dailySalesChart = new Chartist.Line('#dailySalesChart', dataDailySalesChart, optionsDailySalesChart);
-
-        md.startAnimationForLineChart(dailySalesChart);
-    },
-
-    initDashboardPageCharts: function(){
-
-        /* ----------==========     Daily Sales Chart initialization    ==========---------- */
-
-        //图表数据
-        dataDailySalesChart = {
-            labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
-            series: [
-                [12, 17, 7, 17, 23, 18, 38]
-            ]
-        };
-
-        //图表样式
-        optionsDailySalesChart = {
-            lineSmooth: Chartist.Interpolation.cardinal({
-                tension: 0
-            }),
-            low: 0,
-            high: 50, // creative tim: we recommend you to set the high sa
-                    // the biggest value + something for a better look
-            chartPadding: { top: 0, right: 0, bottom: 0, left: 0}
-        };
-        // CSS选择器
-        // .class   .intro          选择 class="intro" 的所有元素。	1
-        // #id	    #firstname	    选择 id="firstname" 的所有元素。	1
-        // *	    *	            选择所有元素。	2
-        // element	p	            选择所有 <p> 元素。	1
-        // element,element	div,p	选择所有 <div> 元素和所有 <p> 元素。
-
-        // 选取元素创建图表
-        var dailySalesChart = new Chartist.Line('#dailySalesChart', dataDailySalesChart, optionsDailySalesChart);
-
-        md.startAnimationForLineChart(dailySalesChart);
-
-        /* ----------==========     Completed Tasks Chart initialization    ==========---------- */
-
-    
-        
-    },
-
     initGoogleMaps: function(){
         var myLatlng = new google.maps.LatLng(40.748817, -73.985428);
         var mapOptions = {
@@ -132,7 +68,4 @@ demo = {
             }
         });
 	}
-
-
-
 };
